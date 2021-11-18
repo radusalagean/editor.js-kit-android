@@ -26,6 +26,5 @@ dependencies {
     implementation "androidx.core:core-ktx:${versions.androidx_core_ktx}"
     implementation "androidx.constraintlayout:constraintlayout:${versions.androidx_constraint}"
     implementation project(":editorjskit")
-    implementation project(":gsonparser")
     testImplementation "junit:junit:${versions.junit}"
 }

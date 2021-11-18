@@ -1,7 +1,6 @@
-package work.upstarts.gsonparser
+package work.upstarts.editorjskit
 
 import com.google.gson.*
-import work.upstarts.editorjskit.EJKit
 import work.upstarts.editorjskit.models.*
 import work.upstarts.editorjskit.models.data.EJDelimiterData
 import java.lang.reflect.Type

@@ -1,14 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-buildscript {
-    repositories {
-        mavenLocal()
-        google()
-        mavenCentral()
-    }
-}
-
 android {
     compileSdkVersion versions.compileSdk
 
@@ -45,9 +37,10 @@ android {
 dependencies {
     implementation "androidx.appcompat:appcompat:${versions.androidx_appcompat}"
     implementation "androidx.core:core-ktx:${versions.androidx_core_ktx}"
-
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
     api "com.hannesdorfmann:adapterdelegates4:${versions.adapter_delegates}"
-    api "com.github.bumptech.glide:glide:${versions.glide}"
+    implementation "com.github.bumptech.glide:glide:${versions.glide}"
+    api "com.google.code.gson:gson:${versions.gson}"
     implementation "androidx.constraintlayout:constraintlayout:${versions.androidx_constraint}"
     testImplementation "junit:junit:${versions.junit}"
 }

@@ -8,11 +8,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
+import work.upstarts.editorjskit.EJDeserializer
 import work.upstarts.editorjskit.models.EJBlock
 import work.upstarts.editorjskit.models.HeadingLevel
 import work.upstarts.editorjskit.ui.EditorJsAdapter
 import work.upstarts.editorjskit.ui.theme.EJStyle
-import work.upstarts.gsonparser.EJDeserializer
 
 const val DATA_JSON_PATH = "dummy_data.json"
 
