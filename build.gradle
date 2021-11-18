@@ -4,7 +4,7 @@ buildscript {
     apply from: rootProject.file('gradle/versions.gradle')
     repositories {
         google()
-        jcenter()
+        mavenCentral()
 
     }
     dependencies {
@@ -19,7 +19,7 @@ allprojects {
     repositories {
         mavenLocal()
         google()
-        jcenter()
+        mavenCentral()
 
     }
 }

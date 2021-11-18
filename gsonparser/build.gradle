@@ -1,14 +1,11 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.panpf.bintray-publish'
 apply plugin: 'kotlin-android'
 
 buildscript {
     repositories {
         mavenLocal()
-        jcenter()
-    }
-    dependencies {
-        classpath "com.github.panpf.bintray-publish:bintray-publish:${versions.novoda_bintray_plugin}"
+        google()
+        mavenCentral()
     }
 }
 
@@ -49,10 +46,4 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
     api "com.google.code.gson:gson:${versions.gson}"
     api project(":editorjskit")
-}
-
-apply from: rootProject.file("gradle/publish.gradle")
-publish {
-    repoName = 'EditorJSKit-Gson'
-    artifactId = 'ejkit-gson'
 }
